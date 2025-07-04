@@ -84,7 +84,31 @@ This section builds a complete digit recognition system from scratch.
 	•	Understood key neural network building blocks in PyTorch
 	•	Learned how to debug, train, and evaluate models end-to-end
 
+##  Project Summary
 
+This is a school project implementing a complete **neural network pipeline using PyTorch** on the MNIST handwritten digits dataset.
+
+The notebook includes:
+- Tensor creation and manipulation
+- Forward propagation
+- Backpropagation and gradients
+- Building linear and convolutional networks (FFN & CNN)
+- Training & evaluation (accuracy up to 98%)
+- Visualization and analysis of learned filters
+
+##  AI Skills Applied
+- PyTorch tensors and gradients
+- Custom NN module classes (`nn.Module`)
+- Loss functions & optimizers (SGD, Adam)
+- Data loading and preprocessing with torchvision
+- Model evaluation and test set prediction
+
+## ⚙ Setup
+
+```bash
+git clone https://github.com/Stanleymikky00/Neural-Network-MNIST-Pytorch.git
+cd Neural-Network-MNIST-Pytorch
+pip install -r requirements.txt
 
 ##  How to Run This Project
 
