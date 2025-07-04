@@ -1,0 +1,26 @@
+
+name: Test PyTorch Notebook
+
+on: [push]
+
+jobs:
+  test-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install nbconvert
+
+    - name: Execute notebook
+      run: |
+        jupyter nbconvert --execute --to notebook 07-pytorch_exercise.ipynb
