@@ -23,4 +23,4 @@ jobs:
 
     - name: Execute notebook
       run: |
-        jupyter nbconvert --execute --to notebook 07-pytorch_exercise.ipynb
+        jupyter nbconvert --execute --to notebook 07-pytorch_cnn_exercise.ipynb
